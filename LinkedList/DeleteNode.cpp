@@ -145,7 +145,6 @@ void deleteFromPosition(int position, Node *&head, Node *&tail)
         delete nodetoDelete;
         return;
     }
-
     // Delete from middle
     Node *temp = head;
     for (int i = 0; i < position - 2; i++)
