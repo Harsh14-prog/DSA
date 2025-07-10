@@ -63,7 +63,7 @@ bool isPalindrome(Node* head) {
     Node* first = head;
     Node* second = secondHalfStart;
     bool isPalin = true;
-    while (second != NULL) {
+    while (second != NULL) {   // first will not going to NULL as it is whole LL
         if (first->data != second->data) {
             isPalin = false;
             break;
