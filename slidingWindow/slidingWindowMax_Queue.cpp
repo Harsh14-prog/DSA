@@ -17,7 +17,7 @@ vector <int> slidingWindowMax(int arr[] , int n , int k){
         while (!dq.empty() && arr[dq.back()] <= arr[i]){
             dq.pop_back();   // hence dq used
         }
-        // any we are pop_front if go to 2nd window , so automatically prev back will become front sso we have to pop that back if it is smaller
+        // any way we are pop_front if go to 2nd window , so automatically prev back will become front so we have to pop that back if it is smaller
 
         dq.push_back(i);
 
